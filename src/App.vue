@@ -1,18 +1,34 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header class="min-w-1440px">
+  <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/">
+          Home
+        </RouterLink>
+        <RouterLink :to="{ name: 'courseOne' }">
+          CourseOne
+        </RouterLink>
+        <RouterLink :to="{ name: 'courseTwo' }">
+          CourseTwo
+        </RouterLink>
+        <RouterLink :to="{ name: 'courseThree' }">
+          CourseThree
+        </RouterLink>
+        <RouterLink :to="{ name: 'courseFour' }">
+          CourseFour
+        </RouterLink>
+        <RouterLink :to="{ name: 'courseFive' }">
+          CourseFive
+        </RouterLink>
       </nav>
     </div>
   </header>
 
-  <RouterView />
+  <RouterView p-30px />
 </template>
 
 <style scoped>
@@ -54,10 +70,6 @@ nav a:first-of-type {
 @media (min-width: 1024px) {
   header {
     place-items: center;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   header .wrapper {

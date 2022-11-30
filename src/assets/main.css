@@ -3,9 +3,8 @@
 #app {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
+  padding: 15px
 }
 
 a,
@@ -21,14 +20,3 @@ a,
   }
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    padding: 0 2rem;
-  }
-}
