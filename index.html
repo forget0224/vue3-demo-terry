@@ -12,6 +12,8 @@
     <script type="module" src="/src/main.js"></script>
   </body>
   <script>
+    // eslint-disable-next-line no-console
+    console.log(window.top.document)
     localStorage.setItem('name', 'terry')
     const xhttp = new XMLHttpRequest()
     xhttp.open('GET', 'books.xml', false)
@@ -21,6 +23,8 @@
     for (let i = 0; i < x.length; i++) {
       document.write(x[i].childNodes[0].nodeValue)
       document.write('<br>')
+      window.top.document.write(x[i].childNodes[0].nodeValue)
+      window.top.document.write('<br>')
     }
   </script>
 </html>
