@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "prod": "vite --mode production",
     "build": "vite build",
     "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
@@ -13,6 +14,7 @@
   "dependencies": {
     "@iconify-json/ci": "^1.1.5",
     "@iconify-json/line-md": "^1.1.18",
+    "@unocss/reset": "^0.48.0",
     "@vueuse/core": "^9.6.0",
     "pinia": "^2.0.23",
     "vue": "^3.2.41",
@@ -31,6 +33,7 @@
     "eslint-plugin-vue": "^9.3.0",
     "jsdom": "^20.0.1",
     "prettier": "^2.7.1",
+    "sass": "^1.57.1",
     "start-server-and-test": "^1.14.0",
     "unocss": "^0.46.5",
     "unplugin-auto-import": "^0.11.5",

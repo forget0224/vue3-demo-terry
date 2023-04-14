@@ -1,5 +1,4 @@
 <script setup>
-import { computed } from '@vue/reactivity'
 import useWindowOpen from '@/composable/useWindowOpen'
 
 const url = ref('https://google.com.tw')

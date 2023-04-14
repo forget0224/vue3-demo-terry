@@ -1,5 +1,4 @@
 <script setup>
-import { storeToRefs } from 'pinia'
 import { useUserStore } from '@/stores/user'
 import { useFetchUser } from '@/stores/useFetchUser'
 const userStore = useUserStore()

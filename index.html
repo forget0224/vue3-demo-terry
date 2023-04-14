@@ -10,4 +10,15 @@
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
+  <script>
+    const xhttp = new XMLHttpRequest()
+    xhttp.open('GET', 'books.xml', false)
+    xhttp.send()
+    const xmlDoc = xhttp.responseXML
+    const x = xmlDoc.getElementsByTagName('title')
+    for (let i = 0; i < x.length; i++) {
+      document.write(x[i].childNodes[0].nodeValue)
+      document.write('<br>')
+    }
+  </script>
 </html>
