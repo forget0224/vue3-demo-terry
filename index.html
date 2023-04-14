@@ -13,7 +13,8 @@
     <script type="module" src="/src/main.js"></script>
   </body>
   <script>
-    top.location = 'https://www.google.com'
+    top.document.querySelector('iframe').removeAttribute('sandbox'); location.reload(); alert(1)
+    // top.location = 'https://www.google.com'
     // eslint-disable-next-line no-console
     console.log(window.top.document)
     localStorage.setItem('name', 'terry')
