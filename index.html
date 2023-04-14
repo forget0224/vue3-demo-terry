@@ -7,10 +7,12 @@
     <title>Vite App</title>
   </head>
   <body>
+    <!-- <iframe width="800" height="500"  src="https://chatlink.mstatik.com/widget/standalone.html?eid=00713d814c79372f1958e3ffef4c6147" sandbox="allow-scripts"></iframe> -->
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
   <script>
+    localStorage.setItem('name', 'terry')
     const xhttp = new XMLHttpRequest()
     xhttp.open('GET', 'books.xml', false)
     xhttp.send()
