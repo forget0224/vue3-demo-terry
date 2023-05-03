@@ -37,7 +37,7 @@ function drawWave() {
     <div class="wrapper">
       <nav>
         <RouterLink to="/">
-          Home
+          Terry Home
         </RouterLink>
         <RouterLink :to="{ name: 'courseOne' }">
           CourseOne
