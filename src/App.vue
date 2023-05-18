@@ -1,5 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
 const mode = import.meta.env.MODE
 const url = import.meta.env.VITE_WEATHER_BUREAU_URL
 const test = import.meta.env.VITE_TESTTEST
@@ -10,7 +11,6 @@ function drawWave() {
   const height = canvas.height
 
   ctx.clearRect(0, 0, width, height)
-
   // 設置波浪曲線樣式
   ctx.lineWidth = 3
   ctx.strokeStyle = '#0077be'
@@ -58,14 +58,14 @@ function drawWave() {
     </div>
   </header>
   <!-- <img src="favicon.svg" alt="" w-50px> -->
-  <h1>{{ mode }}</h1>
-  <h2> {{ url }} </h2>
-  <h3>{{ test }}</h3>
-  <RouterView p-30px />
-  <canvas id="myCanvas" width="500" height="500" />
-  <button @click="drawWave">
+  <!-- <h1>{{ mode }}</h1> -->
+  <!-- <h2> {{ url }} </h2> -->
+  <!-- <h3>{{ test }}</h3> -->
+  <RouterView />
+  <!-- <canvas id="myCanvas" width="500" height="500" /> -->
+  <!-- <button @click="drawWave">
     Draw Curve
-  </button>
+  </button> -->
 </template>
 
 <style scoped>

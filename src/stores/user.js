@@ -9,7 +9,7 @@ export const useUserStore = defineStore('user', () => {
 
   const getUsersName = computed(() => state.result.map(item => item.name).join('-'))
 
-  const fetchUserList = async() => {
+  const fetchUserList = async () => {
     state.isLoading = true
     await new Promise(resolve => setTimeout(resolve, 1000))
     state.result = [{

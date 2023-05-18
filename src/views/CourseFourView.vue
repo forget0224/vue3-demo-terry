@@ -1,6 +1,7 @@
 <script setup>
 import TheWeatherList from '@/components/TheWeatherList.vue'
 </script>
+
 <script>
 export default {
   inheritAttrs: false,
@@ -9,7 +10,7 @@ export default {
 
 <template>
   <Suspense>
-    <the-weather-list />
+    <TheWeatherList />
     <template #fallback>
       <div i-line-md:loading-loop text-50 />
     </template>

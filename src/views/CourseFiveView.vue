@@ -1,8 +1,10 @@
 <script setup>
 import Modal from '@/components/Modal.vue'
 import RenderFunctionDemo from '@/components/RenderFunctionDemo.vue'
+
 const showModal = ref(false)
 </script>
+
 <script>
 export default {
   inheritAttrs: false,
@@ -19,6 +21,11 @@ export default {
     Show Model
   </button>
   <Modal v-model="showModal">
-    <h1>內容內容</h1>
+    <div color="black">
+      <h1>內容內容</h1>
+      <h1>內容內容</h1>
+      <h1>內容內容</h1>
+      <h1>內容內容</h1>
+    </div>
   </Modal>
 </template>

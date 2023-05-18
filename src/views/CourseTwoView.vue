@@ -1,9 +1,11 @@
 <script setup>
 import { useUserStore } from '@/stores/user'
 import { useFetchUser } from '@/stores/useFetchUser'
+
 const userStore = useUserStore()
-const { isLoading, result, fetchUserList } = useFetchUser()
+const { isLoading, result, fetchUser, fetchUserList } = useFetchUser()
 </script>
+
 <template>
   <h1> Composable vs Pinia(vuex) </h1>
   <h2> Composable </h2>
@@ -11,6 +13,9 @@ const { isLoading, result, fetchUserList } = useFetchUser()
   <h1 v-else>
     {{ result }}
   </h1>
+  <button @click="fetchUser">
+    fetchUser
+  </button>
   <button @click="fetchUserList">
     fetchUserList
   </button>

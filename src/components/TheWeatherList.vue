@@ -1,5 +1,6 @@
 <script setup>
 import useCWBFetch from '@/composable/useCWBFetch'
+
 const query = new URLSearchParams({
   // locationName: ['新北市', '基隆市'],
 })
@@ -41,8 +42,12 @@ const processData = computed(() => {
         <th w-25vw>
           今天清晨
         </th>
-        <th>今天白天</th>
-        <th>今天晚上到明天清晨</th>
+        <th w-25vw>
+          今天白天
+        </th>
+        <th w-25vw>
+          今天晚上到明天清晨
+        </th>
       </tr>
     </thead>
     <tbody text-slate-200>

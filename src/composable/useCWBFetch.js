@@ -1,4 +1,5 @@
 import { createFetch } from '@vueuse/core'
+
 const useCWBFetch = createFetch({
   baseUrl: import.meta.env.VITE_WEATHER_BUREAU_URL,
   options: {

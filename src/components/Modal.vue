@@ -1,5 +1,5 @@
 <script setup>
-const props = defineProps({
+defineProps({
   modelValue: {
     type: Boolean,
     default: false,
@@ -11,7 +11,6 @@ const emit = defineEmits(['update:modelValue'])
 function closeModal() {
   emit('update:modelValue', false)
 }
-
 </script>
 
 <template>
@@ -26,7 +25,6 @@ function closeModal() {
     >
       <div
         v-show="modelValue"
-        ref="modal-backdrop"
         class="fixed z-10 inset-0 overflow-y-auto bg-black bg-opacity-50"
       >
         <div
@@ -42,7 +40,6 @@ function closeModal() {
           >
             <div
               v-show="modelValue"
-              ref="modal"
               class="relative bg-white rounded-lg text-left overflow-hidden shadow-xl p-8 w-1/2"
               role="dialog"
               aria-modal="true"
