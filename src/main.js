@@ -9,12 +9,12 @@ import './assets/main.css'
 
 // import { worker } from './mocks/browser'
 
-if (process.env.NODE_ENV === 'development') {
-  const { worker } = await import('./mocks/browser')
-  worker.start({
-    onUnhandledRequest: 'bypass',
-  })
-}
+// if (process.env.NODE_ENV === 'development') {
+const { worker } = await import('./mocks/browser')
+worker.start({
+  onUnhandledRequest: 'bypass',
+})
+// }
 
 const app = createApp(App)
 
